@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>JM Sports</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #000000;
+  background: #ffffff;
+}
+
+header {
+  background: #000000;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 5px solid #ffffff;
+}
+
+header img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #dddddd;
+}
+
+section {
+  padding: 30px 20px;
+}
+
+section h2 {
+  border-bottom: 2px solid #000000;
+  padding-bottom: 5px;
+  color: #000000;
+}
+
+section p, ul.events-list li {
+  color: #000000;
+}
+
+ul.events-list {
+  list-style: square;
+  padding-left: 20px;
+}
+
+ul.events-list li {
+  color: #000000;
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+}
+
+.slider img {
+  flex: 0 0 auto;
+  width: 300px;
+  border-radius: 10px;
+  border: 5px solid #000000;
+  transition: transform 0.5s ease;
+}
+
+.slider img:hover {
+  transform: scale(1.05);
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));  
+  gap: 15px;
+}
+
+.team .member {
+  background: #000000;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  border: 5px solid #ffffff;
+  text-align: center;
+  transition: transform 0.5s ease, background 0.5s ease;
+}
+
+.team .member:hover {
+  transform: translateY(-10px);
+  background: #fff;
+  color: #000000;
+  border: 5px solid #000000;
+}
+
+.contact-form {
+  background: #000000;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 5px solid #ffffff;
+  max-width: 400px;
+  margin-bottom: 30px;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.contact-form input[type='submit'] {
+  background: #ffffff;
+  color: #000000;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form input[type='submit']:hover {
+  background: #dddddd;
+}
+
+.testimonials {
+  background: #888888;
+  color: #000000;
+  padding: 20px;
+  border-radius: 10px;
+  border: 5px solid #ffffff;
+}
+
+.testimonials .item {
+  margin-bottom: 20px;
+}
+
+.sponsors {
+  padding: 30px 20px;
+}
+
+.sponsors ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.sponsors ul li {
+  border: 5px solid #000000;
+  padding: 20px;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+footer {
+  padding: 20px;
+  background: #000000;
+  color: #ffffff;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <img src="logo.jpg" alt="JM Sports Logo">
+  <h1>JM Sports</h1>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="home">
+  <h2>Welcome</h2>
+  <p>Welcome to JM Sports — supporting athletes, inspiring greatness.</p>
+</section>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>JM Sports is dedicated to promoting athletics and helping young athletes achieve their dreams. We organize sports events and provide professional guidance.</p>
+  <img src="https://cdn.pixabay.com/photo/2016/08/04/04/04/usain-bolt-1549434_1280.jpg" alt="Usain Bolt">
+</section>
+
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="slider">
+    <img src="https://cdn.pixabay.com/photo/2021/04/04/04/04/sports-5967432_1280.jpg" alt="Athletics">
+    <img src="https://cdn.pixabay.com/photo/2021/04/04/04/04/sports-5967434_1280.jpg" alt="Training">
+    <img src="https://cdn.pixabay.com/photo/2021/04/04/04/04/sports-5967435_1280.jpg" alt="Track">
+  </div>
+</section>
+
+<section id="events">
+  <h2>Events</h2>
+  <ul class="events-list">
+    <li>100m Race</li>
+    <li>200m Race</li>
+    <li>400m Race</li>
+    <li>800m Race</li>
+    <li>1500m Race</li>
+    <li>Relay Races</li>
+    <li>Long Jump</li>
+    <li>High Jump</li>
+  </ul>
+</section>
+
+<section id="team">
+  <h2>Team</h2>
+  <div class="team">
+    <div class="member">
+      <h3>Raja Danish</h3>
+      <p>CEO</p>
+    </div>
+    <div class="member">
+      <h3>Raja Sajid</h3>
+      <p>CEO</p>
+    </div>
+    <div class="member">
+      <h3>Ahmed Noor</h3>
+      <p>Event Manager</p>
+    </div>
+    <div class="member">
+      <h3>Fatima Khan</h3>
+      <p>Nutritionist</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <form class="contact-form">
+    <input type="text" placeholder="Full Name">
+    <input type="email" placeholder="Email">
+    <textarea placeholder="Write your message here..."></textarea>
+    <input type="submit" value="Send">
+  </form>
+</section>
+
+<section id="testimonials">
+  <h2>Testimonials</h2>
+  <div class="testimonials">
+    <div class="item"><p>“JM Sports really encouraged me to pursue my dream of becoming a runner.” — Amina Malik</p></div>
+    <div class="item"><p>“Excellent team, wonderful facilities.” — Rahim Khan</p></div>
+    <div class="item"><p>“A place where future champions are forged.” — Bilal Anwar</p></div>
+  </div>
+</section>
+
+<section id="sponsors">
+  <h2>Sponsors</h2>
+  <ul>
+    <li>Nike</li>
+    <li>Adidas</li>
+    <li>Puma</li>
+    <li>Reebok</li>
+  </ul>
+</section>
+
+<footer>
+  <p>© 2025 JM Sports — All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
